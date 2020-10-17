@@ -68,19 +68,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rev-bj-zTw">
                                         <rect key="frame" x="34" y="0.0" width="348" height="106"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AzB-uC-BvF">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AzB-uC-BvF">
                                                 <rect key="frame" x="-2" y="0.0" width="352" height="31"/>
                                                 <connections>
                                                     <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="Z1z-Lo-lHC"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-q6-59w">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-q6-59w">
                                                 <rect key="frame" x="-2" y="38" width="352" height="31"/>
                                                 <connections>
                                                     <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="HMB-h1-EwV"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-Uc-UAB">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.45000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-Uc-UAB">
                                                 <rect key="frame" x="-2" y="76" width="352" height="31"/>
                                                 <connections>
                                                     <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="BaQ-aU-x7Q"/>
@@ -114,6 +114,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4C-1F-9iP" secondAttribute="trailing" constant="16" id="myL-fy-o7Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="RCr-Uc-UAB" id="hWA-kC-lHC"/>
+                        <outlet property="greenSlider" destination="AHH-q6-59w" id="LNp-4g-gzw"/>
+                        <outlet property="hueColorViev" destination="U4C-1F-9iP" id="T95-bu-IEQ"/>
+                        <outlet property="redSlider" destination="AzB-uC-BvF" id="dbC-3F-ciJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

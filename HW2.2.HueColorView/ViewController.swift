@@ -9,14 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var hueColorViev: UIView!
+    
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        changeColor()
     }
 
-    @IBAction func colorChangeSlider() {
+    func changeColor() {
+        hueColorViev.backgroundColor = .init(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1)
+    }
     
-        
+    @IBAction func colorChangeSlider() {
+        changeColor()
     }
     
 }
