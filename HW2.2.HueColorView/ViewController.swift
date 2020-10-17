@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var hueColorViev: UIView!
     
+    
+    
+    
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
@@ -27,6 +30,10 @@ class ViewController: UIViewController {
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1)
+    }
+    
+    func valueOfColors() {
+        
     }
     
     @IBAction func colorChangeSlider() {
