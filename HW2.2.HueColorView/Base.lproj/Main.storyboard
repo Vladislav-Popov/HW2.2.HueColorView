@@ -47,21 +47,18 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-Zj-vds">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" label="red"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa5-Kd-k64">
                                                 <rect key="frame" x="0.0" y="38" width="0.0" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" label="green"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osO-TA-QFL">
                                                 <rect key="frame" x="0.0" y="76" width="0.0" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" label="blue"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -71,17 +68,23 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rev-bj-zTw">
                                         <rect key="frame" x="34" y="0.0" width="348" height="106"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="redSlider2" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AzB-uC-BvF">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AzB-uC-BvF">
                                                 <rect key="frame" x="-2" y="0.0" width="352" height="31"/>
-                                                <accessibility key="accessibilityConfiguration" label="redSlider"/>
+                                                <connections>
+                                                    <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="Z1z-Lo-lHC"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-q6-59w">
                                                 <rect key="frame" x="-2" y="38" width="352" height="31"/>
-                                                <accessibility key="accessibilityConfiguration" label="greenSlider"/>
+                                                <connections>
+                                                    <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="HMB-h1-EwV"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-Uc-UAB">
                                                 <rect key="frame" x="-2" y="76" width="352" height="31"/>
-                                                <accessibility key="accessibilityConfiguration" label="blueSlider"/>
+                                                <connections>
+                                                    <action selector="colorChangeSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="BaQ-aU-x7Q"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
