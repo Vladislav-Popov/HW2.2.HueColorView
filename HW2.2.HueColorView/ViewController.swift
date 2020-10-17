@@ -11,17 +11,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var hueColorViev: UIView!
     
-    
-    
+    @IBOutlet weak var redValueLabel: UILabel!
+    @IBOutlet weak var greenValueLabel: UILabel!
+    @IBOutlet weak var blueValueLabel: UILabel!
     
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         changeColor()
+        changeValue()
     }
 
     func changeColor() {
@@ -32,12 +33,15 @@ class ViewController: UIViewController {
             alpha: 1)
     }
     
-    func valueOfColors() {
-        
+    func changeValue() {
+        redValueLabel.text = String(format: "%.2f", redSlider.value)
+        greenValueLabel.text = String(format: "%.2f", greenSlider.value)
+        blueValueLabel.text = String(format: "%.2f", blueSlider.value)
     }
     
     @IBAction func colorChangeSlider() {
         changeColor()
+        changeValue()
     }
     
 }
