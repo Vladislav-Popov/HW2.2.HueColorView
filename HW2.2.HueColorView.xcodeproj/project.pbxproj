@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86E09784254EB27100568CAF /* MainColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E09783254EB27100568CAF /* MainColorViewController.swift */; };
 		86ECACAD253B396600661EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECACAC253B396600661EFB /* AppDelegate.swift */; };
 		86ECACAF253B396600661EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECACAE253B396600661EFB /* SceneDelegate.swift */; };
-		86ECACB1253B396600661EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECACB0253B396600661EFB /* ViewController.swift */; };
+		86ECACB1253B396600661EFB /* SetColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECACB0253B396600661EFB /* SetColorViewController.swift */; };
 		86ECACB4253B396600661EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECACB2253B396600661EFB /* Main.storyboard */; };
 		86ECACB6253B396800661EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86ECACB5253B396800661EFB /* Assets.xcassets */; };
 		86ECACB9253B396800661EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECACB7253B396800661EFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86E09783254EB27100568CAF /* MainColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainColorViewController.swift; sourceTree = "<group>"; };
 		86ECACA9253B396600661EFB /* HW2.2.HueColorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.2.HueColorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECACAC253B396600661EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECACAE253B396600661EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86ECACB0253B396600661EFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86ECACB0253B396600661EFB /* SetColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColorViewController.swift; sourceTree = "<group>"; };
 		86ECACB3253B396600661EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86ECACB5253B396800661EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86ECACB8253B396800661EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865C40AE254F299F00F3E330 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86ECACB0253B396600661EFB /* SetColorViewController.swift */,
+				86E09783254EB27100568CAF /* MainColorViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		865C40AF254F29E900F3E330 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86ECACAC253B396600661EFB /* AppDelegate.swift */,
+				86ECACAE253B396600661EFB /* SceneDelegate.swift */,
+				86ECACBA253B396800661EFB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		865C40B1254F2A0D00F3E330 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86ECACB7253B396800661EFB /* LaunchScreen.storyboard */,
+				86ECACB2253B396600661EFB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		86ECACA0253B396600661EFB = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +86,10 @@
 		86ECACAB253B396600661EFB /* HW2.2.HueColorView */ = {
 			isa = PBXGroup;
 			children = (
-				86ECACAC253B396600661EFB /* AppDelegate.swift */,
-				86ECACAE253B396600661EFB /* SceneDelegate.swift */,
-				86ECACB0253B396600661EFB /* ViewController.swift */,
-				86ECACB2253B396600661EFB /* Main.storyboard */,
+				865C40AF254F29E900F3E330 /* Supporting Files */,
+				865C40AE254F299F00F3E330 /* View Controllers */,
+				865C40B1254F2A0D00F3E330 /* Storyboards */,
 				86ECACB5253B396800661EFB /* Assets.xcassets */,
-				86ECACB7253B396800661EFB /* LaunchScreen.storyboard */,
-				86ECACBA253B396800661EFB /* Info.plist */,
 			);
 			path = HW2.2.HueColorView;
 			sourceTree = "<group>";
@@ -137,9 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86ECACB1253B396600661EFB /* ViewController.swift in Sources */,
+				86ECACB1253B396600661EFB /* SetColorViewController.swift in Sources */,
 				86ECACAD253B396600661EFB /* AppDelegate.swift in Sources */,
 				86ECACAF253B396600661EFB /* SceneDelegate.swift in Sources */,
+				86E09784254EB27100568CAF /* MainColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B59TJ7VG3;
-				INFOPLIST_FILE = HW2.2.HueColorView/Info.plist;
+				INFOPLIST_FILE = "HW2.2.HueColorView/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B59TJ7VG3;
-				INFOPLIST_FILE = HW2.2.HueColorView/Info.plist;
+				INFOPLIST_FILE = "HW2.2.HueColorView/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
